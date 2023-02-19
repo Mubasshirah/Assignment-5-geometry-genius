@@ -1,10 +1,12 @@
 function getInputValueById(elementId){
     const inputValue=document.getElementById(elementId);
+    
     const inputValueString=inputValue.value;
     const inputValueFloat=parseFloat(inputValueString);
     inputValue.value='';
-   
+    
     return inputValueFloat;
+    
 }
   function getCommonAreaPart(firstInput,secondInput){
     const commonAreaPart=firstInput*secondInput;
@@ -20,7 +22,6 @@ function getInputValueById(elementId){
         const element=splittedLetters[i];
         console.log(element)
         color=color+ letters[Math.floor(Math.random() * 22)];
-console.log(color)
 
         
         

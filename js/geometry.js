@@ -38,7 +38,7 @@ document.getElementById('rectangleBtn').addEventListener('click',function(){
     const areaOfRectangle=getCommonAreaPart(firstInputRectangle,secondInputRectangle);
     if(firstInputRectangle <0 || secondInputRectangle<0){
         alert('input positive number');
-        return;
+        return false;
           }
           else{
             const calculationAreaField=document.getElementById('calculationArea');
