@@ -11,6 +11,7 @@ document.getElementById('trianglrBtn').addEventListener('click',function(){
  return;
    }
    else{
+ const 
     console.log(areaOfTriangle);
    }
  

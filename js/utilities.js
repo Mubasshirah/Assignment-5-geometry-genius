@@ -12,14 +12,14 @@ function getInputValueById(elementId){
   }
 
   function getRandomColor(){
-    const letters = '0123456789';
+    const letters = '0123456789abcdefABCDEF';
     const splittedLetters=letters.split('');
     let color='#';
     
     for (let i = 0; i < 6; i++) {
         const element=splittedLetters[i];
         console.log(element)
-        color=color+ letters[Math.floor(Math.random() * 10)];
+        color=color+ letters[Math.floor(Math.random() * 22)];
 console.log(color)
 
         
