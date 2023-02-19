@@ -53,7 +53,7 @@ document.getElementById('rhombusBtn').addEventListener('click',function(){
         return;
           }
           else{
-           console.log(areaOfTriangle);
+           console.log(areaOfRhombus);
           }
     
 })
@@ -61,7 +61,13 @@ document.getElementById('pentagonBtn').addEventListener('click',function(){
     const firstInputPentagon=getInputValueById('pentagonP')
     const secondInputPentagon=getInputValueById('pentagonB');
     const areaOfPentagon=.5 * getCommonAreaPart(firstInputPentagon,secondInputPentagon);
-    console.log(areaOfPentagon);
+    if(firstInputPentagon <0 || secondInputPentagon<0){
+        alert('input positive number');
+        return;
+          }
+          else{
+           console.log(areaOfPentagon);
+          }
     
 })
 document.getElementById('ellipseBtn').addEventListener('click',function(){
@@ -69,9 +75,14 @@ document.getElementById('ellipseBtn').addEventListener('click',function(){
     const secondInputEllipse=getInputValueById('ellipseB');
     const piString=(Math.PI).toFixed(2);
     const piFloat=parseFloat(piString);
-    console.log(piFloat);
     const areaOfEllipse=piFloat * getCommonAreaPart(firstInputEllipse, secondInputEllipse);
-    console.log(areaOfEllipse);
+    if(firstInputEllipse <0 || secondInputEllipse<0){
+        alert('input positive number');
+        return;
+          }
+          else{
+           console.log(areaOfEllipse);
+          }
     
 })
 
