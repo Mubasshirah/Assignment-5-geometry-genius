@@ -11,8 +11,22 @@ document.getElementById('trianglrBtn').addEventListener('click',function(){
  return;
    }
    else{
- const 
-    console.log(areaOfTriangle);
+ const calculationAreaField=document.getElementById('calculationArea');
+  
+  const p=document.createElement('p');
+  p.innerText='Triangle: ';
+  const span=document.createElement('span');
+  span.innerText=areaOfTriangle;
+  p.appendChild(span);
+  const span2=document.createElement('span');
+  span2.innerHTML=`cm<sup>2</sup?`;
+  p.appendChild(span2);
+  const button=document.createElement('button')
+  button.innerText='convert to m^2';
+  p.appendChild(button);
+  calculationAreaField.appendChild(p);
+ 
+    
    }
  
     // console.log(areaOfTriangle);
@@ -27,8 +41,25 @@ document.getElementById('rectangleBtn').addEventListener('click',function(){
         return;
           }
           else{
-           console.log(areaOfRectangle);
-          }
+            const calculationAreaField=document.getElementById('calculationArea');
+  
+            const p=document.createElement('p');
+            p.innerText='Rectangle: ';
+            const span=document.createElement('span');
+            span.innerText=areaOfRectangle;
+            p.appendChild(span);
+            const span2=document.createElement('span');
+            span2.innerHTML=`cm<sup>2</sup?`;
+            p.appendChild(span2);
+            const button=document.createElement('button')
+            button.innerText='convert to m^2';
+            p.appendChild(button);
+            calculationAreaField.appendChild(p);
+           
+              
+             }
+           
+          
     
     
 })
@@ -41,8 +72,25 @@ document.getElementById('parallelogramBtn').addEventListener('click',function(){
         return;
           }
           else{
-           console.log(areaOfParallelogram);
-          }
+            const calculationAreaField=document.getElementById('calculationArea');
+  
+            const p=document.createElement('p');
+            p.innerText='Parallelogram: ';
+            const span=document.createElement('span');
+            span.innerText=areaOfParallelogram;
+            p.appendChild(span);
+            const span2=document.createElement('span');
+            span2.innerHTML=`cm<sup>2</sup?`;
+            p.appendChild(span2);
+            const button=document.createElement('button')
+            button.innerText='convert to m^2';
+            p.appendChild(button);
+            calculationAreaField.appendChild(p);
+           
+              
+             }
+           
+          
     
 })
 document.getElementById('rhombusBtn').addEventListener('click',function(){
@@ -54,8 +102,24 @@ document.getElementById('rhombusBtn').addEventListener('click',function(){
         return;
           }
           else{
-           console.log(areaOfRhombus);
-          }
+            const calculationAreaField=document.getElementById('calculationArea');
+  
+            const p=document.createElement('p');
+            p.innerText='Rhombus: ';
+            const span=document.createElement('span');
+            span.innerText=areaOfRhombus;
+            p.appendChild(span);
+            const span2=document.createElement('span');
+            span2.innerHTML=`cm<sup>2</sup?`;
+            p.appendChild(span2);
+            const button=document.createElement('button')
+            button.innerText='convert to m^2';
+            p.appendChild(button);
+            calculationAreaField.appendChild(p);
+           
+              
+             }
+            
     
 })
 document.getElementById('pentagonBtn').addEventListener('click',function(){
@@ -67,8 +131,23 @@ document.getElementById('pentagonBtn').addEventListener('click',function(){
         return;
           }
           else{
-           console.log(areaOfPentagon);
-          }
+            const calculationAreaField=document.getElementById('calculationArea');
+  
+            const p=document.createElement('p');
+            p.innerText='Pentagon: ';
+            const span=document.createElement('span');
+            span.innerText=areaOfPentagon;
+            p.appendChild(span);
+            const span2=document.createElement('span');
+            span2.innerHTML=`cm<sup>2</sup?`;
+            p.appendChild(span2);
+            const button=document.createElement('button')
+            button.innerText='convert to m^2';
+            p.appendChild(button);
+            calculationAreaField.appendChild(p);
+           
+              
+             }
     
 })
 document.getElementById('ellipseBtn').addEventListener('click',function(){
@@ -82,8 +161,23 @@ document.getElementById('ellipseBtn').addEventListener('click',function(){
         return;
           }
           else{
-           console.log(areaOfEllipse);
-          }
+            const calculationAreaField=document.getElementById('calculationArea');
+  
+            const p=document.createElement('p');
+            p.innerText='Ellipse: ';
+            const span=document.createElement('span');
+            span.innerText=areaOfEllipse;
+            p.appendChild(span);
+            const span2=document.createElement('span');
+            span2.innerHTML=`cm<sup>2</sup?`;
+            p.appendChild(span2);
+            const button=document.createElement('button')
+            button.innerText='convert to m^2';
+            p.appendChild(button);
+            calculationAreaField.appendChild(p);
+           
+              
+             }
     
 })
 
