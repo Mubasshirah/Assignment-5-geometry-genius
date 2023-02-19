@@ -6,7 +6,7 @@ document.getElementById('trianglrBtn').addEventListener('click',function(){
    const secondInputTriangle= getInputValueById('triangleH');
    const areaOfTriangle= .5* getCommonAreaPart(firstInputTriangle,secondInputTriangle);
    
- if(firstInputTriangle <0 || secondInputTriangle<0){
+ if(firstInputTriangle <0 || secondInputTriangle<0 ||  (typeof firstInputTriangle!=='number') ||secondInputTriangle==''|| (typeof secondInputTriangle!=='number') || firstInputTriangle==''){
  alert('input positive number');
  return;
    }
